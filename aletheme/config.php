@@ -98,78 +98,174 @@ function aletheme_get_options() {
                         "std" => "",
                         "type" => "text");
 
+
+
+
+
+    /*
+    ---------- First test ----------
+    $options[] = array("name" => "Heading",
+                        "type" => "heading");
+
+    $options[] = array( "name" => "Skills list title",
+                        "desc" => "Input skills here",
+                        "id" => "ale_skills_list_title",
+                        "std" => "Web Developer, Graphic Artist",
+                        "type" => "text");
+
+    $options[] = array( "name" => "Intro caption",
+                        "desc" => "Input main page caption here",
+                        "id" => "ale_f",
+                        "std" => "HEY THERE! I AM VALSORYA!",
+                        "type" => "text");
+
+    $options[] = array("name" => "Footing",
+                        "type" => "heading");
+
+    $options[] = array( "name" => "Last centence title",
+                        "desc" => "Input last centence here",
+                        "id" => "ale_last_word",
+                        "std" => "Around the Web",
+                        "type" => "text");
+
+    $options[] = array( "name" => "Adress 1",
+                        "desc" => "Input your first adress here",
+                        "id" => "ale_adress1",
+                        "std" => "69, Roadside st, Munich, Germany",
+                        "type" => "text");
+
+    $options[] = array( "name" => "Adress 2",
+                        "desc" => "Input your second adress here if you have",
+                        "id" => "ale_adress2",
+                        "std" => "69, Roadside st, Munich, Germany",
+                        "type" => "text");
+
+    $options[] = array( "name" => "Adress 3",
+                        "desc" => "Input your third adress here if you have",
+                        "id" => "ale_adress3",
+                        "std" => "69, Roadside st, Munich, Germany",
+                        "type" => "text");
+
+    $options[] = array("name" => "Totaly",
+                        "type" => "heading");
+
+    $options[] = array( "name" => "Website name",
+                        "desc" => "Input your website name here",
+                        "id" => "ale_webname",
+                        "std" => "Dobie",
+                        "type" => "text");
+    */
+
+
+
+    /* ---------- New Website --------- */
+    $options[] = array( "name" => "Default",
+                        "type" => "heading");
+
+    $options[] = array( "name" => "Your name",
+                        "desc" => "Input your name here",
+                        "id" => "ale_whoose",
+                        "std" => "Liana",
+                        "type" => "text");
+
+
+    $options[] = array( "name" => "Top",
+                        "type" => "heading");
+
+    $options[] = array( "name" => "Working area title",
+                        "desc" => "Input your working area here (e.g: Internetional relatins; Online marketing...)",
+                        "id" => "ale_watitle",
+                        "std" => "Internetional relations",
+                        "type" => "text");
+
+    $options[] = array( "name" => "Total information",
+                        "desc" => "Input here total information about yourself",
+                        "id" => "ale_totalinfo",
+                        "std" => "A proffesor in Lviv National University of Ivan Franko and great knowledgeable person in International economic branch. More than 15 years of expirience.",
+                        "type" => "text");
+
+
+
+
+
+
     $options[] = array( "name" => "Typography",
                         "type" => "heading");
 
     $options[] = array( "name" => "Select the body Font from Google Library",
                         "desc" => "The default Font is - Raleway",
-                        "id" => "ale_headerfont",
+                        "id" => "ale_main_font",
                         "std" => "Raleway",
                         "type" => "select",
                         "options" => $headerfont);
 
     $options[] = array( "name" => "Select the body Font (Extended) from Google Library",
-                        "desc" => "The default Font (extended) is - 600",
-                        "id" => "ale_headerfontex",
-                        "std" => "600",
+                        "desc" => "The default Font (extended) is - Raleway",
+                        "id" => "ale_main_font_ext",
+                        "std" => "",
                         "type" => "text",
                         );
 
-    $options[] = array( "name" => "Select the Headers Font from Google Library",
-                        "desc" => "The default Font is - Libre Baskerville",
-                        "id" => "ale_mainfont",
-                        "std" => "Libre+Baskerville",
+
+    $options[] = array( "name" => "Select the body Font from Google Library",
+                        "desc" => "The additional Font is - Josefin+Sans",
+                        "id" => "ale_add_font",
+                        "std" => "Josefin+Sans",
                         "type" => "select",
                         "options" => $headerfont);
 
-    $options[] = array( "name" => "Select the Headers Font (Extended) from Google Library",
-                        "desc" => "The default Font (extended) is - 400,400italic",
-                        "id" => "ale_mainfontex",
-                        "std" => "400,400italic",
+    $options[] = array( "name" => "Select the body Font (Extended) from Google Library",
+                        "desc" => "The default Font (extended) is - Josefin+Sans",
+                        "id" => "ale_add_font_ext",
+                        "std" => "",
                         "type" => "text",
                         );
 
+
+
     $options[] = array( 'name' => "H1 Style",
-                        'desc' => "Change the h1 style",
+                        'desc' => "Change the h1 style (style of first level caption font)",
                         'id' => 'ale_h1sty',
-                        'std' => array('size' => '22px','face' => 'Libre+Baskerville','style' => 'normal','color' => '#111111'),
+                        'std' => array('size' => '28px','face' => 'Raleway','style' => 'normal','color' => '#111111'),
                         'type' => 'typography');
 
     $options[] = array( 'name' => "H2 Style",
-                        'desc' => "Change the h2 style",
+                        'desc' => "Change the h2 style (style of second level caption font)",
                         'id' => 'ale_h2sty',
-                        'std' => array('size' => '20px','face' => 'Libre+Baskerville','style' => 'normal','color' => '#111111'),
+                        'std' => array('size' => '22px','face' => 'Raleway','style' => 'normal','color' => '#111111'),
                         'type' => 'typography');
 
     $options[] = array( 'name' => "H3 Style",
-                        'desc' => "Change the h3 style",
+                        'desc' => "Change the h3 style (style of third level caption font)",
                         'id' => 'ale_h3sty',
-                        'std' => array('size' => '18px','face' => 'Libre+Baskerville','style' => 'normal','color' => '#111111'),
+                        'std' => array('size' => '18px','face' => 'Raleway','style' => 'normal','color' => '#111111'),
                         'type' => 'typography');
 
     $options[] = array( 'name' => "H4 Style",
-                        'desc' => "Change the h4 style",
+                        'desc' => "Change the h4 style (style of fifth level caption font)",
                         'id' => 'ale_h4sty',
-                        'std' => array('size' => '16px','face' => 'Libre+Baskerville','style' => 'normal','color' => '#111111'),
+                        'std' => array('size' => '16px','face' => 'Raleway','style' => 'normal','color' => '#111111'),
                         'type' => 'typography');
 
     $options[] = array( 'name' => "H5 Style",
-                        'desc' => "Change the h5 style",
+                        'desc' => "Change the h5 style (style of fifth level caption  font)",
                         'id' => 'ale_h5sty',
-                        'std' => array('size' => '14px','face' => 'Libre+Baskerville','style' => 'normal','color' => '#111111'),
+                        'std' => array('size' => '14px','face' => 'Raleway','style' => 'normal','color' => '#111111'),
                         'type' => 'typography');
 
     $options[] = array( 'name' => "H6 Style",
-                        'desc' => "Change the h6 style",
+                        'desc' => "Change the h6 style (style of sixth level caption font)",
                         'id' => 'ale_h6sty',
-                        'std' => array('size' => '12px','face' => 'Libre+Baskerville','style' => 'normal','color' => '#111111'),
+                        'std' => array('size' => '12px','face' => 'Raleway','style' => 'normal','color' => '#111111'),
                         'type' => 'typography');
 
     $options[] = array( 'name' => "Body Style",
                         'desc' => "Change the body font style",
                         'id' => 'ale_bodystyle',
-                        'std' => array('size' => '11px','face' => 'Libre+Baskerville','style' => 'normal','color' => '#111111'),
+                        'std' => array('size' => '11px','face' => 'Raleway','style' => 'normal','color' => '#111111'),
                         'type' => 'typography');
+
+
 
 	$options[] = array( "name" => "Social",
 						"type" => "heading");

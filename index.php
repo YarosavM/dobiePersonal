@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<?php?>
 <h1>It's Index Page</h1>
 <br><br>
     <!-- Content -->
@@ -121,4 +121,98 @@
         </div>
 
     </div>
+    <?php */ ?>
+
+
+
+
+    <div class="next-page1">
+            <div class="resume-zone">
+                <div class="fixer"></div>
+                <div class="big-cap-field">
+                    <div class="big-capper diver"><div class="bc-bord">Resume</div></div>
+                </div>
+                <div class="res-left">
+                    <div class="res-name-cap">Liana Moskalyk</div>
+
+                    <div class="res-element">
+                        <div class="res-intro-pl">
+                            <div class="flexer">
+                                <div class="place-capper">Summary</div>
+                            </div>
+                            <div class="res-element-content-m">
+                                Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis 
+                                et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni 
+                                dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non 
+                                numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="res-element">
+                        <div class="res-edu-pl">
+                            <div class="flexer">
+                                <div class="place-capper">Education</div>
+                            </div>
+                            <div class="res-edu-content-m">
+                                <ul class="res-list">
+                                    <li class="res-cl-l-e">
+                                        <span class="bold">Lorem Ipsum</span> - Sed ut perspiciatis, unde omnis iste natus error.
+                                    </li>
+                                    <li class="res-cl-l-e">
+                                        <span class="bold">Ut enim ad minima</span> - Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="res-right">
+                    <div class="res-element">
+                        <div class="res-exp-pl">
+                            <div class="flexer">
+                                <div class = "place-capper">Expiriense</div>
+                            </div>
+                            <div class="res-element-content-m">
+                                <ul class="res-list">
+                                    <li class="res-cl-l-e">
+                                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis.
+                                    </li>
+                                    <li class="res-cl-l-e">
+                                    Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni 
+                                    dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="res-element">
+                        <div class="res-skills-pl">
+                            <div class="flexer">
+                                <div class = "place-capper">Skills</div>
+                            </div>
+                            <div class="res-element-content-m">
+                                <ul class="res-list">
+                                    <li class="res-cl-l-e">
+                                    At vero eos et accusamus et iusto odio dignissimos ducimus.
+                                    </li>
+                                    <li class="res-cl-l-e">
+                                    Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat...
+                                    </li>
+                                    <li class="res-cl-l-e">
+                                    Et harum quidem rerum facilis est et expedita distinctio.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    
 <?php get_footer(); ?>
