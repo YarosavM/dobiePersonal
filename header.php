@@ -23,13 +23,13 @@
 
 	<?php /* -------- New Website -------- */ ?>
 	<div class="cap-zone">
-		<div class="dark-theme">
+		<?php if ( get_theme_mod('darkness_set') == 1 ) { echo '<div class="disp-flx dark-theme">'; } ?>
 			<div class="main-tab-list">
 				<div class="mtl-field">
 					<ul class="mtl-list">
-						<li class="mtl-identify mtl-sitename hidden">Liana</li>
+						<li class="mtl-identify mtl-sitename fav-color-text hidden"><?php bloginfo( 'title' ); ?></li>
 						<li class="mtl-identify mtl-sitelogo hidden"></li>
-						<li class="mtl-element-i mtl-default">Home</li>
+						<li class="mtl-element-i mtl-default fav-color-text">Home</li>
 						<li class="mtl-element-i mtl-unactive">Resume</li>
 						<li class="mtl-element-i mtl-unactive">Contacts</li>
 						<li class="mtl-element-i mtl-unactive">About</li>
@@ -37,20 +37,20 @@
 				</div>
 			</div>
 			<div align="center" class="cap-box">
-				<div class="cap-n-line"></div>
-				<div align="center" class="cb-padder">
-					<div class="first-level-cap"><?php echo ale_get_option('whoose') ?></div>
+				<div class="cap-n-line fav-color-border"></div>
+				<div align="center" class="cb-padder fav-color-border">
+					<div class="first-level-cap"><?php bloginfo( 'title' ); ?> </div>
 					<div class="second-level-cap">
-						<?php echo ale_get_option('watitle') ?>
+						<?php bloginfo( 'description' ); ?> 
 					</div>
 				</div>
-				<div class="cap-n-line"></div>
+				<div class="cap-n-line fav-color-border"></div>
 				<div class="cap-b-line"></div>
 			</div>
 			<div align="center" class="me-info-field">
 				<div class="me-inf-pl">
-					<div align="center" class="me-inf-txt">
-						<?php echo ale_get_option('totalinfo') ?>
+					<div align="center" class="me-inf-txt fav-color-border">
+						<?php echo get_theme_mod('head_description_settings'); ?>
 					</div>
 				</div>
 			</div>
@@ -61,20 +61,67 @@
 						<li class="tl-cap-black">
 							<div class="tl-list-cap">SOCIAL PROFILES</div>
 						</li>
-						<li class="tl-element-i tl-element-fb-black">
-							<div class="tl-fb"></div>
-						</li>
-						<li class="tl-element-i tl-element-tw-black">
-							<div class="tl-tw"></div>
-						</li>
-						<li class="tl-element-i tl-element-gp-black">
-							<div class="tl-gp"></div>
-						</li>
+						<?php if(ale_get_option('fb')){ 
+							echo '	<a href="'.ale_get_option('fb').'">
+										<li class="tl-element-i tl-element-fb-black">
+											<div class="tl-fb"></div>
+										</li>
+									</a>'; 
+						} ?>
+						<?php if(ale_get_option('twi')){ 
+							echo '	<a href="'.ale_get_option('twi').'">
+										<li class="tl-element-i tl-element-tw-black">
+											<div class="tl-tw"></div>
+										</li>
+									</a>'; 
+						} ?>
+						<?php if(ale_get_option('gog')){ 
+							echo '	<a href="'.ale_get_option('gog').'">
+										<li class="tl-element-i tl-element-gp-black">
+											<div class="tl-gp"></div>
+										</li>
+									</a>'; 
+						} ?>
+
+
+
+						<?php if(ale_get_option('pint')){ 
+							echo '	<a href="'.ale_get_option('pint').'">
+										<li class="tl-element-i tl-element-pint-black">
+											<div class="tl-pint"></div>
+										</li>
+									</a>'; 
+						} ?>
+						<?php if(ale_get_option('flickr')){ 
+							echo '	<a href="'.ale_get_option('flickr').'">
+										<li class="tl-element-i tl-element-flicr-black">
+											<div class="tl-flicr"></div>
+										</li>
+									</a>'; 
+						} ?>
+						<?php if(ale_get_option('linked')){ 
+							echo '	<a href="'.ale_get_option('linked').'">
+										<li class="tl-element-i tl-element-li-black">
+											<div class="tl-li"></div>
+										</li>
+									</a>'; 
+						} ?>
+						<?php if(ale_get_option('insta')){ 
+							echo '	<a href="'.ale_get_option('insta').'">
+										<li class="tl-element-i tl-element-ig-black">
+											<div class="tl-ig"></div>
+										</li>
+									</a>'; 
+						} ?>
+
+
+
 					</center>
 					</ul>
 				</div>
 			</div>
-		</div>
+		
+		<?php if ( get_theme_mod('darkness_set') == 1 ) { echo "</div>";} ?>
 	</div>
 	
 	<script>
@@ -85,10 +132,12 @@
 
 		        if (Math.round($(window).scrollTop()) > 90) {
 		        	$('.main-tab-list').addClass('scrolled');
+		        	//$('.mtl-field').addClass('scrolled-align');
 		        	$('.mtl-identify').removeClass('hidden');
 		        } 
 		        else {
 		        	$('.main-tab-list').removeClass('scrolled');
+		        	//$('.mtl-field').removeClass('scrolled-align');
 		        	$('.mtl-identify').addClass('hidden');
 		        }
 

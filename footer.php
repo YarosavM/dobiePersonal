@@ -47,66 +47,7 @@
     <!-- Scripts -->
     <?php */?>
 
-
-
-
-
-
-
-
-    <?php /*?>
-
-    --------- First Test ---------
-
-    <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p><?php echo ale_get_option('adress1') ?></p><br>
-                        <?php if(ale_get_option('adress2')) { ?><p><?php echo ale_get_option('adress2') ?></p><br><?php } ?>
-                        <?php if(ale_get_option('adress3')) { ?><p><?php echo ale_get_option('adress3') ?></p><br><?php } ?>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3><?php echo ale_get_option('last_word') ?></h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3><?php echo ale_get_option('webname') ?></h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; Dobie 2018. ALL RIGHTS RESERVED
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-
-<?php*/?>
+    
 
 
     <?php /* -------- New Website -------- */ ?>

@@ -102,60 +102,6 @@ function aletheme_get_options() {
 
 
 
-    /*
-    ---------- First test ----------
-    $options[] = array("name" => "Heading",
-                        "type" => "heading");
-
-    $options[] = array( "name" => "Skills list title",
-                        "desc" => "Input skills here",
-                        "id" => "ale_skills_list_title",
-                        "std" => "Web Developer, Graphic Artist",
-                        "type" => "text");
-
-    $options[] = array( "name" => "Intro caption",
-                        "desc" => "Input main page caption here",
-                        "id" => "ale_f",
-                        "std" => "HEY THERE! I AM VALSORYA!",
-                        "type" => "text");
-
-    $options[] = array("name" => "Footing",
-                        "type" => "heading");
-
-    $options[] = array( "name" => "Last centence title",
-                        "desc" => "Input last centence here",
-                        "id" => "ale_last_word",
-                        "std" => "Around the Web",
-                        "type" => "text");
-
-    $options[] = array( "name" => "Adress 1",
-                        "desc" => "Input your first adress here",
-                        "id" => "ale_adress1",
-                        "std" => "69, Roadside st, Munich, Germany",
-                        "type" => "text");
-
-    $options[] = array( "name" => "Adress 2",
-                        "desc" => "Input your second adress here if you have",
-                        "id" => "ale_adress2",
-                        "std" => "69, Roadside st, Munich, Germany",
-                        "type" => "text");
-
-    $options[] = array( "name" => "Adress 3",
-                        "desc" => "Input your third adress here if you have",
-                        "id" => "ale_adress3",
-                        "std" => "69, Roadside st, Munich, Germany",
-                        "type" => "text");
-
-    $options[] = array("name" => "Totaly",
-                        "type" => "heading");
-
-    $options[] = array( "name" => "Website name",
-                        "desc" => "Input your website name here",
-                        "id" => "ale_webname",
-                        "std" => "Dobie",
-                        "type" => "text");
-    */
-
 
 
     /* ---------- New Website --------- */
@@ -168,8 +114,15 @@ function aletheme_get_options() {
                         "std" => "Liana",
                         "type" => "text");
 
+    $options[] = array( "name" => "Page #2 title (default: Resume)",
+                        "desc" => "Input main caption to page #2 on scrolling here (default this page is Resume)",
+                        "id" => "ale_res_title",
+                        "std" => "Resume",
+                        "type" => "text");
 
-    $options[] = array( "name" => "Top",
+
+
+    $options[] = array( "name" => "Header options",
                         "type" => "heading");
 
     $options[] = array( "name" => "Working area title",
@@ -181,11 +134,215 @@ function aletheme_get_options() {
     $options[] = array( "name" => "Total information",
                         "desc" => "Input here total information about yourself",
                         "id" => "ale_totalinfo",
-                        "std" => "A proffesor in Lviv National University of Ivan Franko and great knowledgeable person in International economic branch. More than 15 years of expirience.",
+                        "std" => "Professor in Lviv National University of Ivan Franko and great knowledgeable person in International economic branch. More than 15 years of expirience.",
+                        "type" => "textarea");
+
+    $options[] = array( "name" => "Resume options",
+                        "type" => "heading");
+
+    $options[] = array( "name" => "Summary info",
+                        "desc" => "Enter summary information about you here",
+                        "id" => "ale_res_summary",
+                        "std" => "Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.",
+                        "type" => "textarea");
+
+
+
+    $options[] = array( "name" => "",
+                        "desc" => "",
+                        "id" => "ale_marginner",
+                        "std" => "",
+                        "type" => "caption");
+
+    $options[] = array( "name" => "Work expirience 1",
+                        "desc" => "Input your work expirience #1 here",
+                        "id" => "ale_res_exp1",
+                        "std" => "1: Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis.",
+                        "type" => "textarea");
+
+    $options[] = array( "name" => "Work expirience 2",
+                        "desc" => "Input your work expirience #2 here (If you have)",
+                        "id" => "ale_res_exp2",
+                        "std" => "2: Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis.",
+                        "type" => "textarea");
+    
+    $options[] = array( "name" => "Work expirience 3",
+                        "desc" => "Input your work expirience #3 here (If you have)",
+                        "id" => "ale_res_exp3",
+                        "std" => "3: Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis.",
+                        "type" => "textarea");
+
+    $options[] = array( "name" => "Work expirience 4",
+                        "desc" => "Input your work expirience #3 here (If you have)",
+                        "id" => "ale_res_exp4",
+                        "std" => "",
+                        "type" => "textarea");
+
+    $options[] = array( "name" => "Work expirience 5",
+                        "desc" => "Input your work expirience #5 here (If you have)",
+                        "id" => "ale_res_exp5",
+                        "std" => "",
+                        "type" => "textarea");
+
+    $options[] = array( "name" => "Work expirience 6",
+                        "desc" => "Input your work expirience #6 here (If you have)",
+                        "id" => "ale_res_exp6",
+                        "std" => "",
+                        "type" => "textarea");
+
+    $options[] = array( "name" => "Work expirience 7",
+                        "desc" => "Input your work expirience #7 here (If you have)",
+                        "id" => "ale_res_exp7",
+                        "std" => "",
+                        "type" => "textarea");
+
+
+
+
+    $options[] = array( "name" => "",
+                        "desc" => "",
+                        "id" => "ale_marginner",
+                        "std" => "",
+                        "type" => "caption");
+
+    $options[] = array( "name" => "Education caption #1",
+                        "desc" => "Input here place #1 were you have study",
+                        "id" => "ale_edu1_place",
+                        "std" => "Academy",
+                        "type" => "text");
+
+    $options[] = array( "name" => "Education description #1",
+                        "desc" => "Input here description about your education place #1 (spiciality, faculty, area etc)",
+                        "id" => "ale_edu1_desc",
+                        "std" => "Begining education and base skills",
+                        "type" => "text");
+
+
+    $options[] = array( "name" => "",
+                        "desc" => "",
+                        "id" => "ale_marginner",
+                        "std" => "",
+                        "type" => "caption");
+
+    $options[] = array( "name" => "Education caption #2",
+                        "desc" => "Input here place #2 were you have study",
+                        "id" => "ale_edu2_place",
+                        "std" => "College",
+                        "type" => "text");
+
+    $options[] = array( "name" => "Education description #2",
+                        "desc" => "Input here description about your education place #2 (spiciality, faculty, area etc)",
+                        "id" => "ale_edu2_desc",
+                        "std" => "Intermediate skills, practise and education",
+                        "type" => "text");
+
+
+    $options[] = array( "name" => "",
+                        "desc" => "",
+                        "id" => "ale_marginner",
+                        "std" => "",
+                        "type" => "caption");
+
+    $options[] = array( "name" => "Education caption #3",
+                        "desc" => "Input here place #3 were you have study",
+                        "id" => "ale_edu3_place",
+                        "std" => "University 1",
+                        "type" => "text");
+
+    $options[] = array( "name" => "Education description #3",
+                        "desc" => "Input here description about your education place #3 (spiciality, faculty, area etc)",
+                        "id" => "ale_edu3_desc",
+                        "std" => "Professional education, greate skills in area 1",
+                        "type" => "text");
+
+
+    $options[] = array( "name" => "",
+                        "desc" => "",
+                        "id" => "ale_marginner",
+                        "std" => "",
+                        "type" => "caption");
+
+    $options[] = array( "name" => "Education caption #4",
+                        "desc" => "Input here place #4 were you have study",
+                        "id" => "ale_edu4_place",
+                        "std" => "",
+                        "type" => "text");
+
+    $options[] = array( "name" => "Education description #4",
+                        "desc" => "Input here description about your education place #4 (spiciality, faculty, area etc)",
+                        "id" => "ale_edu4_desc",
+                        "std" => "",
+                        "type" => "text");
+
+
+    $options[] = array( "name" => "",
+                        "desc" => "",
+                        "id" => "ale_marginner",
+                        "std" => "",
+                        "type" => "caption");
+
+    $options[] = array( "name" => "Education caption #5",
+                        "desc" => "Input here place #5 were you have study",
+                        "id" => "ale_edu5_place",
+                        "std" => "",
+                        "type" => "text");
+
+    $options[] = array( "name" => "Education description #5",
+                        "desc" => "Input here description about your education place #5 (spiciality, faculty, area etc)",
+                        "id" => "ale_edu5_desc",
+                        "std" => "",
                         "type" => "text");
 
 
 
+    $options[] = array( "name" => "",
+                        "desc" => "",
+                        "id" => "ale_marginner",
+                        "std" => "",
+                        "type" => "caption");
+
+    $options[] = array( "name" => "Skill hightlight 1",
+                        "desc" => "Input here your skill #1",
+                        "id" => "ale_skill1",
+                        "std" => "Study easelly",
+                        "type" => "text");
+    $options[] = array( "name" => "Skill hightlight 2",
+                        "desc" => "Input here your skill #2 (Optionally)",
+                        "id" => "ale_skill2",
+                        "std" => "Comunicative persson",
+                        "type" => "text");
+    $options[] = array( "name" => "Skill hightlight 3",
+                        "desc" => "Input here your skill #3 (Optionally)",
+                        "id" => "ale_skill3",
+                        "std" => "Professional skills and knowledge in the area",
+                        "type" => "text");
+    $options[] = array( "name" => "Skill hightlight 4",
+                        "desc" => "Input here your skill #4 (Optionally)",
+                        "id" => "ale_skill4",
+                        "std" => "",
+                        "type" => "text");
+    $options[] = array( "name" => "Skill hightlight 5",
+                        "desc" => "Input here your skill #5 (Optionally)",
+                        "id" => "ale_skill5",
+                        "std" => "",
+                        "type" => "text");
+    $options[] = array( "name" => "Skill hightlight 6",
+                        "desc" => "Input here your skill #6 (Optionally)",
+                        "id" => "ale_skill6",
+                        "std" => "",
+                        "type" => "text");
+    $options[] = array( "name" => "Skill hightlight 7",
+                        "desc" => "Input here your skill #7 (Optionally)",
+                        "id" => "ale_skill7",
+                        "std" => "",
+                        "type" => "text");
+
+
+
+
+
+    $options[] = array( "name" => "Footer options",
+                        "type" => "heading");
 
 
 
@@ -273,17 +430,17 @@ function aletheme_get_options() {
     $options[] = array( "name" => "Twitter",
                         "desc" => "Your twitter profile URL.",
                         "id" => "ale_twi",
-                        "std" => "",
+                        "std" => "twitter.com",
                         "type" => "text");
 	$options[] = array( "name" => "Facebook",
 						"desc" => "Your facebook profile URL.",
 						"id" => "ale_fb",
-						"std" => "",
+						"std" => "facebook.com",
 						"type" => "text");
     $options[] = array( "name" => "Google+",
                         "desc" => "Your google+ profile URL.",
                         "id" => "ale_gog",
-                        "std" => "",
+                        "std" => "google.com",
                         "type" => "text");
     $options[] = array( "name" => "Pinterest",
                         "desc" => "Your pinteres profile URL.",
